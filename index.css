@@ -1,0 +1,234 @@
+:root{
+    --white:#ddd;
+    --dark: #111; 
+    --lightGrey: #9DB2BF;
+    --darkGrey: #526D82;
+    --darkBlue: #002B5B;
+    --lightBeige: #F5EFE3;
+    --neon: #2dd9fe;
+    --neon-glow: #00a3d5;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Ajusta la fuente según tus preferencias */
+}
+
+.header-container {
+    position: fixed;
+    width: 800px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow: auto;
+    background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+
+.header-container:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.header-container:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+span.brand-name{
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+
+.logo-img img {
+    height: 40px;
+    border-radius: 35%; /* Ajusta la altura del logo según tus necesidades */
+}
+
+.nav-section {
+    width: 480px;
+    display: flex;
+    align-items: left;
+    margin-left: 0%;
+    
+}
+
+.brand-container {
+    margin-left: 10px;
+    margin-right: 50px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+     color: var(--lightBeige);
+    margin-right: 20px;
+    margin-left: 50px; /* Espaciado entre el nombre de la marca y el botón de navegación */
+}
+
+.nav-bars ul {
+    width: fit-content;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin:5px 15px 5px 5px;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.nav-bars li {
+    width: fit-content;
+    margin-right: 20px;
+    border: 2px solid var(--lightBeige);
+    background-color: var(--lightBeige); /* Espaciado entre elementos de navegación */
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px var(--neon);
+
+}
+
+a{
+    width: 45.5px;
+    height: 28px;
+    color: var(--neon-glow);
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 7px;
+
+}
+a.a-index:hover{
+    filter: brightness(150%);
+    font-size: 1.3rem;
+    margin: 0%;
+    
+    
+
+}
+a.a-gallery:hover{
+    filter: brightness(150%);
+    font-size: 1.3rem;
+    margin: 0%;
+
+}
+a.a-contact:hover{
+    filter: brightness(150%);
+    font-size: 1.3rem;
+    margin: 0%;
+
+}
+a.a-blog:hover{
+    filter: brightness(150%);
+    font-size: 1.3rem;
+    margin: 0%;
+
+}
+.search-icon {
+    margin-left: auto; /* Empuja el icono de búsqueda a la derecha */
+}
+
+.container.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--lightBeige);
+}
+
+.about-img img {
+    margin-top: 60px;
+    width: 200px;
+    height: 200px; /* Asegura que la imagen no se desborde del contenedor */
+    border-radius: 50%; /* Ajusta el radio del borde según tus preferencias */
+    margin-bottom: 5px; /* Espaciado inferior de la imagen */
+    
+}
+h2{
+    margin-top: 5px ;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--darkBlue);
+}
+h3{
+    margin-top: 5px ;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--darkBlue);
+}
+div.social-icons {
+    width:fit-content;
+    height: 50px;
+    margin-top: 5px; 
+    align-items: center;
+    align-content: center;/* Espaciado superior entre el contenido y los íconos sociales */
+}
+ ul.socialIcons{
+    width:fit-content;
+    height: 50px;
+    margin-top: 5px; 
+    margin-right: 0px;
+    padding-left: 0%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+img.fab.fa-facebook, img.fab.fa-youtube, img.fab.fa-instagram {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 25%;
+    box-shadow: 3px 3px 5px #002B5B;
+}
+img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover {
+    width: 35px;
+    height: 35px;
+    border-radius: 25%;
+    box-shadow: 3px 3px 5px #002B5B;
+}
+
+.section-one, .section-two {
+    padding: 20px 0; /* Ajusta el espaciado interno según tus preferencias */
+}
+.sec-one-left p{max-width: 400px;
+    justify-content: center;
+}
+.s2_container h2{
+    font-size: 1rem;
+}
+.insta-imgs img {
+    width: 30px;
+    height: 30px;
+}
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Ajusta el color de fondo según tus preferencias */
+    color: #fff; /* Ajusta el color del texto según tus preferencias */
+}
