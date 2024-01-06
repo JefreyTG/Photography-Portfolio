@@ -200,24 +200,57 @@ div.social-icons {
     margin-bottom: 10px;
 }
 img.fab.fa-facebook, img.fab.fa-youtube, img.fab.fa-instagram {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-left: 10px;
     border-radius: 25%;
     box-shadow: 3px 3px 5px #002B5B;
 }
 img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 25%;
     box-shadow: 3px 3px 5px #002B5B;
 }
 
-.section-one, .section-two {
+.section-one-container, .section-two {
+    width: 800px;
+    height: 480px;    
+    background-color: var(--lightBeige);
     padding: 20px 0; /* Ajusta el espaciado interno según tus preferencias */
 }
-.sec-one-left p{max-width: 400px;
-    justify-content: center;
+div.content-div{
+    background-color: var(--lightBeige);
+    
+
+}
+div.about-p-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      
+}
+.about-title h2{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    margin-right: 50px;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.sec-one-left p{
+    width: 300px;
+    justify-content: left;
+
+}
+.sec-one-left img{
+    margin-right: 30px;
+    width:250px;
+    height: 250px;
 }
 .s2_container h2{
     font-size: 1rem;
