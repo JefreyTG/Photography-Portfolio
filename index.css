@@ -16,14 +16,15 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Ajusta la fuente según tus preferencias */
 }
 
-.header-container {
+header.header-container {
     position: fixed;
-    width: 800px;
-    height: 30px;
+    width: 780px;
+    height: 40oxpx;
     display: flex;
     align-items: center;
     padding: 10px;
     overflow: auto;
+    border-radius: 10px;
     background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
@@ -66,7 +67,7 @@ span.brand-name{
 }
 
 .nav-section {
-    width: 480px;
+    width: 460px;
     display: flex;
     align-items: left;
     margin-left: 0%;
@@ -75,10 +76,11 @@ span.brand-name{
 
 .brand-container {
     margin-left: 10px;
-    margin-right: 50px;
+    margin-right: 30px;
     width: fit-content;
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 
 .brand-name {
@@ -154,10 +156,12 @@ a.a-blog:hover{
 }
 
 .container.about {
+    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
     background-color: var(--lightBeige);
 }
 
@@ -179,18 +183,28 @@ h2{
 h3{
     margin-top: 5px ;
     margin-bottom: 5px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--darkBlue);
+}
+.sec-one-left h3{
+    max-width: 400px;
+    margin-left: 150px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-justify:auto;
 }
 div.social-icons {
     width:fit-content;
     height: 50px;
     margin-top: 5px; 
     align-items: center;
-    align-content: center;/* Espaciado superior entre el contenido y los íconos sociales */
+    align-content: center;
+    gap: 20px;/* Espaciado superior entre el contenido y los íconos sociales */
 }
  ul.socialIcons{
+    display: inline;
     width:fit-content;
     height: 50px;
     margin-top: 5px; 
@@ -198,19 +212,22 @@ div.social-icons {
     padding-left: 0%;
     align-items: center;
     margin-bottom: 10px;
+    gap: 20px;
 }
-img.fab.fa-facebook, img.fab.fa-youtube, img.fab.fa-instagram {
+img.fab.fa-facebook, img.fab.fa-youtube, img.fab.fa-instagram, img.fab.fa-whatsapp{
     width: 25px;
     height: 25px;
-    margin-left: 10px;
-    border-radius: 25%;
+    margin-right: 15px;
+    border-radius: 20%;
     box-shadow: 3px 3px 5px #002B5B;
+    gap: 20px;
 }
-img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover {
+img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover, img.fab.fa-whatsapp:hover {
     width: 30px;
     height: 30px;
     border-radius: 25%;
-    box-shadow: 3px 3px 5px #002B5B;
+    box-shadow: 3px 3px 5px var(--neon);
+    filter: brightness(150%);
 }
 
 .section-one-container, .section-two {
@@ -218,9 +235,11 @@ img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover 
     height: 480px;    
     background-color: var(--lightBeige);
     padding: 20px 0; /* Ajusta el espaciado interno según tus preferencias */
+    border-radius: 10px;
 }
 div.content-div{
     background-color: var(--lightBeige);
+    border-radius: 10px;
     
 
 }
@@ -245,23 +264,58 @@ div.about-p-img{
 .sec-one-left p{
     width: 300px;
     justify-content: left;
+    margin-left: 30px;
 
 }
 .sec-one-left img{
-    margin-right: 30px;
+    margin-right: 40px;
     width:250px;
     height: 250px;
+    box-shadow: 3px 3px 5px #002B5B;
 }
-.s2_container h2{
-    font-size: 1rem;
-}
-.insta-imgs img {
-    width: 30px;
-    height: 30px;
-}
-.footer-container {
+
+.footer-container.container {
+    width: 800px;
     text-align: center;
-    padding: 20px;
-    background-color: #333; /* Ajusta el color de fondo según tus preferencias */
-    color: #fff; /* Ajusta el color del texto según tus preferencias */
+    padding: 0%;
+    border-radius: 10px;
+    background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
 }
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+
+.footer-container.container:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.footer-container.container:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+} /* Ajusta el color de fondo según tus preferencias */
+     /* Ajusta el color del texto según tus preferencias */
+
+     .footer-container.container h2{
+        color: var(--neon);
+        
+     }
+     div.contact{
+        display: flex;
+    justify-content: space-around;
+     }
