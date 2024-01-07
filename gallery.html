@@ -1,132 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
 
-<body>
+  <body>
+    
     <!--header-->
     <header class="header-container">
-        <div class="logo-img">
-            <img src="./Images/logo-img.jpg" alt="">
+      <div class="logo-img">
+        <img src="./Images/logo-img.jpg" alt="" />
+      </div>
+      <div class="nav-section">
+        <div class="brand-container">
+          <span class="brand-name">IMAGE GALLERY</span>
+          <span class="nav-btn"><i class="fas fa-bars"></i></span>
         </div>
-        <div class="nav-section">
-            <div class="brand-container">
-                <span class="brand-name">LIGHT EXPERIENCE</span>
-                <span class="nav-btn"><i class="fas fa-bars"></i></span>
-            </div>
-            <!-- Navigation Menu -->
-            <nav class="nav-bars">
-                <ul>
-                    <li><a class="a-index" href="index.html">Inicio</a></li>
-                    <li><a class="a-gallery" href="gallery.html">Galeria</a></li>
-                    <li><a class="a-blog" href="blog.html">Blog</a></li>
-                    <li><a class="a-contact" href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <span class="search-icon"><i class="fas fa-search"></i></span>
-        </div>
+        <!-- Navigation Menu -->
+        <nav class="nav-bars">
+          <ul>
+            <li><a class="a-index" href="index.html">Inicio</a></li>
+            <li><a class="a-gallery" href="gallery.html">Galeria</a></li>
+            <li><a class="a-blog" href="blog.html">Blog</a></li>
+            <li><a class="a-contact" href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+      </div>
     </header>
     <!--end of header-->
 
     <!--main-->
-    <section class="section-three">
-        <div class="container">
-            <div class="gallery">
-                <a href="./imagenesProyecto/gallery1.   jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery1.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery2.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery2.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery3.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery3.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery4.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery4.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery5.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery5.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery6.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery6.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery7.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery7.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery8.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery8.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="./imagenesProyecto/gallery9.jpg">
-                    <div class="single-img">
-                        <img src="./imagenesProyecto/gallery9.jpg" alt="Gallery image">
-                        <div class="single-img-content">
-                            <h3>Hermosos Trabajo</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
+    
+   
+    <section class="section-gallery">
+        <div class="box">
+         <span style="--i: 1"><img src="./Images/portrait1.jpeg" /></span>
+        <span style="--i: 2"><img src="./Images/portrait2.jpeg" /></span>
+        <span style="--i: 3"><img src="./Images/portrait3.jpeg" /></span>
+        <span style="--i: 4"><img src="./Images/portrait4.jpeg" /></span>
+        <span style="--i: 5"><img src="./Images/portrait5.jpeg" /></span>
+        <span style="--i: 6"><img src="./Images/portrait6.jpeg" /></span>
+        <span style="--i: 7"><img src="./Images/portrait7.jpeg" /></span>
+        <span style="--i: 8"><img src="./Images/portrait8.jpeg" /></span>
+      </div>
+      <div class="btns">
+        <div class="btn prev"></div>
+        <div class="btn next"></div>
+      </div>
+      
+    </section>
+    <!--end of main-->
+    <script>
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+        let box = document.querySelector('.box');
+
+        let degrees = 0;
+
+        prev.addEventListener('click', function(){
+            degrees  += 45;
+            box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+
+        })
+        next.addEventListener('click', function(){
+            degrees  -= 45;
+            box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+
+        })
+    </script>
+    
+
+    
+
+    <!--footer-->
+
+    <footer class="footer">
+      <div class="footer-container container">
+        <div>
+          <h2></h2>
         </div>
-        </section>
-        <!--end of main-->
-
-        <!--footer-->
-
-        <footer class="footer">
-            <div class="footer-container container">
-                <div>
-                    <h2></h2>
-                </div>
-            </div>
-        </footer>
-        <!--end of footer-->
-        <script src="simplelightbox-master/dist/simple-lightbox.js"></script>
-
-        <script src="script.js"></script>
-
-    </body>
+      </div>
+    </footer>
+    <!--end of footer-->
+    
+  </body>
 </html>
