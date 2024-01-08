@@ -178,8 +178,8 @@ a.a-blog:hover{
 
 .about-img img {
     margin-top: 90px;
-    width: 200px;
-    height: 200px; /* Asegura que la imagen no se desborde del contenedor */
+    width: 250px;
+    height: 250px; /* Asegura que la imagen no se desborde del contenedor */
     border-radius: 50%; /* Ajusta el radio del borde según tus preferencias */
     margin-bottom: 5px; /* Espaciado inferior de la imagen */
     
@@ -187,14 +187,20 @@ a.a-blog:hover{
 h2{
     margin-top: 5px ;
     margin-bottom: 10px;
+    text-decoration: underline;
     font-size: 1.8rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--darkBlue);
+}
+.about-content h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 h3{
     width: fit-content;
     height: fit-content;
     text-align: center;
+    text-decoration: none;
     margin-top: 5px ;
     margin-bottom: 5px;
     font-size: 1.5rem;
@@ -250,7 +256,7 @@ img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover,
     width: 100%;
     height: 480px;    
     background-color: var(--transparent);
-    padding: 20px 0; /* Ajusta el espaciado interno según tus preferencias */
+    padding: 100px 0; /* Ajusta el espaciado interno según tus preferencias */
     border-radius: 10px;
     margin-top: 30px;
     justify-content: center;
@@ -266,6 +272,9 @@ div.about-p-img{
     flex-direction: row;
     justify-content: space-between;
       
+}
+.about-title{
+    margin-top: 110px;
 }
 .about-title h2{
     width: fit-content;
