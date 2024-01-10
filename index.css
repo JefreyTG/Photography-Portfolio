@@ -5,19 +5,19 @@
     --darkGrey: #526D82;
     --darkBlue: #002B5B;
     --lightBeige: #F5EFE3;
-    --neon: #2dd9fe;
-    --neon-glow: #00a3d5;
+    --purple:#6a0dad;
     --transparent:rgba(255, 0, 0, 0)
 }
+
 
 body {
     margin: 0;
     padding: 0;
     align-items: center;
     align-content: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Ajusta la fuente según tus preferencias */
-    background-image:URL('./Images/Background2.jpeg');
-    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    background-image:URL('./Images/golden-background.jpg');
+    background-size:contain;
     justify-content: center;
     
 }
@@ -31,7 +31,7 @@ header.header-container {
     padding: 10px;
     overflow: auto;
     border-radius: 10px;
-    background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
+    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
@@ -63,7 +63,9 @@ header.header-container {
 }
 
 span.brand-name{
+    color: var(--purple);
     font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
     margin-left: 25px;
 }
 
@@ -90,8 +92,9 @@ span.brand-name{
 }
 
 .brand-name {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     text-align: center;
     width: 300px;
     color: var(--lightBeige);
@@ -117,14 +120,14 @@ span.brand-name{
     border: 2px solid var(--lightBeige);
     background-color: var(--lightBeige); /* Espaciado entre elementos de navegación */
     border-radius: 7px;
-    box-shadow: 2px 2px 4px var(--neon);
+    box-shadow: 2px 2px 4px var(--purple);
 
 }
 
 a{
     width: 45.5px;
     height: 28px;
-    color: var(--neon-glow);
+    color: var(--purple);
     font-size: 1rem;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -187,14 +190,19 @@ a.a-blog:hover{
 h2{
     margin-top: 5px ;
     margin-bottom: 10px;
-    text-decoration: underline;
     font-size: 1.8rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--darkBlue);
+    font-family: 'Raleway', sans-serif;
+    color: var(--purple);
 }
 .about-content h2{
+    color: var(--purple);
     font-size: 2.5rem;
     margin-bottom: 40px;
+}
+blockquote{
+    background-color: rgba(106, 13, 173, 0.2);
+    max-width: 400px; 
+    border-radius: 10px;
 }
 h3{
     width: fit-content;
@@ -204,8 +212,9 @@ h3{
     margin-top: 5px ;
     margin-bottom: 5px;
     font-size: 1.5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--darkBlue);
+    font-family: 'Raleway', sans-serif;
+    color: var(--purple);
+    border-radius: 10px;
 }
 .sec-one-left h3{
     align-self: center;
@@ -215,6 +224,8 @@ h3{
     text-align: center;
     font-size: 1.1rem;
     text-justify:auto;
+    background-color: rgba(106, 13, 173, 0.2)
+
 }
 div.social-icons {
     width:fit-content;
@@ -248,7 +259,7 @@ img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover,
     width: 30px;
     height: 30px;
     border-radius: 25%;
-    box-shadow: 3px 3px 5px var(--neon);
+    box-shadow: 3px 3px 5px var(--purple);
     filter: brightness(150%);
 }
 
@@ -291,6 +302,7 @@ div.about-p-img{
 .sec-one-left p{
     width: 300px;
     font-size: 1.2rem;
+    background-color: rgba(106, 13, 173, 0.2);
     justify-content: left;
     margin-left: 30px;
     margin-top: 0%;
@@ -308,7 +320,7 @@ div.about-p-img{
     text-align: center;
     padding: 0%;
     border-radius: 10px;
-    background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
+    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
@@ -341,7 +353,7 @@ div.about-p-img{
      /* Ajusta el color del texto según tus preferencias */
 
      .footer-container.container h2{
-        color: var(--neon);
+        color: var(--purple);
         
      }
      div.contact{
@@ -354,7 +366,7 @@ div.about-p-img{
         justify-content: space-around;
         text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        background: var(--lightBeige);
+        background-color: rgba(106, 13, 173, 0.2);
         border-radius: 10px;
-        border: 2px solid var(--neon-glow);
+        border: 1px solid ;
     }

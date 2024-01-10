@@ -5,10 +5,10 @@
     --darkGrey: #526D82;
     --darkBlue: #002B5B;
     --lightBeige: #F5EFE3;
-    --neon: #2dd9fe;
-    --neon-glow: #00a3d5;
+    --purple:#6a0dad;
     --transparent:rgba(255, 0, 0, 0)
 }
+
 
 
 .header-container {
@@ -21,7 +21,7 @@
     padding: 10px;
     overflow: auto;
     border-radius: 10px;
-    background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
+    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
@@ -54,8 +54,11 @@
 }
 
 span.brand-name{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     margin-left: 25px;
+    color: var(--purple);
 }
 
 .logo-img img {
@@ -81,8 +84,7 @@ span.brand-name{
 }
 
 .brand-name {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     width: 300px;
     color: var(--lightBeige);
@@ -160,8 +162,9 @@ body{
     margin-top: 0%;
     margin-left: 0%;
     padding: 0%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Ajusta la fuente según tus preferencias */
-    
+    font-family: 'Raleway', sans-serif;
+    background-image:URL('./Images/golden-background.jpg');
+
     
     
 }
@@ -206,9 +209,8 @@ img{
 }
 .p1-container h1, .p2-container h1, .p3-container h1{
     font-size: 2rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: underline;
-    color: var(--darkBlue);
+    font-family: 'Raleway', sans-serif;
+    color: var(--purple);
     margin-top: 70px;
     padding: 0%;
 }
@@ -220,21 +222,22 @@ p, h3 {
     font-size: 1rem;
     justify-content: space-around;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Raleway', sans-serif;
     background: var(--lightBeige);
     border-radius: 10px;
     border: 2px solid var(--neon-glow);
 }
+p{
+    background-color: rgba(106, 13, 173, 0.2);
+}
 
 
-
-.footer-container {
-    
+.footer-container.container {
     width: 100%;
     text-align: center;
     padding: 0%;
     border-radius: 10px;
-    background: linear-gradient(315deg,#1111 3%, #002B5B 38%, #526D82 68%, #9DB2BF 98%);
+    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
@@ -267,10 +270,20 @@ p, h3 {
      /* Ajusta el color del texto según tus preferencias */
 
      .footer-container.container h2{
-        color: var(--neon);
+        color: var(--purple);
         
      }
      div.contact{
         display: flex;
     justify-content: space-around;
      }
+     p {
+        max-width: 400px;
+        font-size: 1rem;
+        justify-content: space-around;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgba(106, 13, 173, 0.2);
+        border-radius: 10px;
+        border: 1px solid ;
+    }
