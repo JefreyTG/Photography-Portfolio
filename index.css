@@ -1,14 +1,17 @@
-:root{
-    --white:#ddd;
-    --dark: #111; 
+:root {
+    --white: #ddd;
+    --dark: #111;
     --lightGrey: #9DB2BF;
     --darkGrey: #526D82;
     --darkBlue: #002B5B;
     --lightBeige: #F5EFE3;
-    --purple:#6a0dad;
-    --transparent:rgba(255, 0, 0, 0)
+    --green: #7db37b;
+    --transparent: rgba(255, 0, 0, 0)
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -16,10 +19,10 @@ body {
     align-items: center;
     align-content: center;
     font-family: 'Raleway', sans-serif;
-    background-image:URL('./Images/golden-background.jpg');
-    background-size:contain;
+    background-image: URL('./Images/golden-background.jpg');
+    background-size: contain;
     justify-content: center;
-    
+
 }
 
 header.header-container {
@@ -31,18 +34,22 @@ header.header-container {
     padding: 10px;
     overflow: auto;
     border-radius: 10px;
-    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
+    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
-    background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
+    background-attachment: fixed;
+    /* Ajusta el color de fondo según tus preferencias */
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
@@ -62,8 +69,8 @@ header.header-container {
     opacity: 0.9;
 }
 
-span.brand-name{
-    color: var(--purple);
+span.brand-name {
+    color: var(--green);
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
     margin-left: 25px;
@@ -71,7 +78,8 @@ span.brand-name{
 
 .logo-img img {
     height: 40px;
-    border-radius: 35%; /* Ajusta la altura del logo según tus necesidades */
+    border-radius: 35%;
+    /* Ajusta la altura del logo según tus necesidades */
 }
 
 .nav-section {
@@ -79,7 +87,7 @@ span.brand-name{
     display: flex;
     align-items: left;
     margin-left: 0%;
-    
+
 }
 
 .brand-container {
@@ -99,7 +107,8 @@ span.brand-name{
     width: 300px;
     color: var(--lightBeige);
     margin-right: 20px;
-    margin-left: 50px; /* Espaciado entre el nombre de la marca y el botón de navegación */
+    margin-left: 50px;
+    /* Espaciado entre el nombre de la marca y el botón de navegación */
 }
 
 .nav-bars ul {
@@ -107,65 +116,73 @@ span.brand-name{
     height: auto;
     list-style: none;
     padding: 0;
-    margin:5px 15px 5px 5px;
+    margin: 5px 15px 5px 5px;
     display: flex;
     align-items: center;
 
-    
+
 }
 
 .nav-bars li {
     width: fit-content;
     margin-right: 20px;
     border: 2px solid var(--lightBeige);
-    background-color: var(--lightBeige); /* Espaciado entre elementos de navegación */
+    background-color: var(--lightBeige);
+    /* Espaciado entre elementos de navegación */
     border-radius: 7px;
-    box-shadow: 2px 2px 4px var(--purple);
+    box-shadow: 2px 2px 4px var(--green);
 
 }
 
-a{
+a {
     width: 45.5px;
     height: 28px;
-    color: var(--purple);
+    color: var(--green);
     font-size: 1rem;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 7px;
 
 }
-a.a-index:hover{
-    filter: brightness(150%);
-    font-size: 1.3rem;
-    margin: 0%;
-    
-    
 
-}
-a.a-gallery:hover{
-    filter: brightness(150%);
+a.a-index:hover {
+    filter: brightness(180%);
     font-size: 1.3rem;
     margin: 0%;
 
+
+
 }
-a.a-contact:hover{
+
+a.a-gallery:hover {
     filter: brightness(150%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
-a.a-blog:hover{
+
+a.a-contact:hover {
     filter: brightness(150%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
+
+a.a-blog:hover {
+    filter: brightness(150%);
+    font-size: 1.3rem;
+    margin: 0%;
+
+}
+
 .header-container img {
     width: 50px;
     height: 50px;
 }
+
 .search-icon {
-    margin-left: auto; /* Empuja el icono de búsqueda a la derecha */
+    margin-left: auto;
+    /* Empuja el icono de búsqueda a la derecha */
 }
 
 .container.about {
@@ -182,72 +199,81 @@ a.a-blog:hover{
 .about-img img {
     margin-top: 90px;
     width: 250px;
-    height: 250px; /* Asegura que la imagen no se desborde del contenedor */
-    border-radius: 50%; /* Ajusta el radio del borde según tus preferencias */
-    margin-bottom: 5px; /* Espaciado inferior de la imagen */
-    
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 5px;
 }
-h2{
-    margin-top: 5px ;
+
+h2 {
+    margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1.8rem;
     font-family: 'Raleway', sans-serif;
-    color: var(--purple);
+    color: var(--green);
 }
-.about-content h2{
-    color: var(--purple);
+
+.about-content h2 {
+    color: var(--green);
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
-blockquote{
-    background-color: rgba(106, 13, 173, 0.2);
-    max-width: 400px; 
+
+blockquote {
+    background-color: rgba(255 , 255, 255, 0.4);
+    max-width: 400px;
     border-radius: 10px;
 }
-h3{
+
+h3 {
     width: fit-content;
     height: fit-content;
     text-align: center;
     text-decoration: none;
-    margin-top: 5px ;
+    margin-top: 5px;
     margin-bottom: 5px;
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
-    color: var(--purple);
+    color: var(--green);
     border-radius: 10px;
 }
-.sec-one-left h3{
+
+.sec-one-left h3 {
     align-self: center;
     max-width: 500px;
     margin-left: 350px;
     margin-top: 40px;
     text-align: center;
     font-size: 1.1rem;
-    text-justify:auto;
-    background-color: rgba(106, 13, 173, 0.2)
-
+    text-justify: auto;
+    background-color: rgba(255 , 255, 255, 0.4);
 }
+
 div.social-icons {
-    width:fit-content;
+    width: fit-content;
     height: 50px;
-    margin-top: 25px; 
+    margin-top: 25px;
     margin-bottom: 25px;
     align-items: center;
     align-content: center;
-    gap: 20px;/* Espaciado superior entre el contenido y los íconos sociales */
+    gap: 20px;
 }
- ul.socialIcons{
+
+ul.socialIcons {
     display: inline;
-    width:fit-content;
+    width: fit-content;
     height: 50px;
-    margin-top: 5px; 
+    margin-top: 5px;
     margin-right: 0px;
     padding-left: 0%;
     align-items: center;
     margin-bottom: 10px;
     gap: 20px;
 }
-img.fab.fa-facebook, img.fab.fa-youtube, img.fab.fa-instagram, img.fab.fa-whatsapp{
+
+img.fab.fa-facebook,
+img.fab.fa-youtube,
+img.fab.fa-instagram,
+img.fab.fa-whatsapp {
     width: 25px;
     height: 25px;
     margin-right: 15px;
@@ -255,39 +281,49 @@ img.fab.fa-facebook, img.fab.fa-youtube, img.fab.fa-instagram, img.fab.fa-whatsa
     box-shadow: 3px 3px 5px #002B5B;
     gap: 20px;
 }
-img.fab.fa-facebook:hover, img.fab.fa-youtube:hover, img.fab.fa-instagram:hover, img.fab.fa-whatsapp:hover {
+
+img.fab.fa-facebook:hover,
+img.fab.fa-youtube:hover,
+img.fab.fa-instagram:hover,
+img.fab.fa-whatsapp:hover {
     width: 30px;
     height: 30px;
     border-radius: 25%;
-    box-shadow: 3px 3px 5px var(--purple);
+    box-shadow: 3px 3px 5px var(--green);
     filter: brightness(150%);
 }
 
-.section-one-container, .section-two {
+.section-one-container,
+.section-two {
     width: 100%;
-    height: 480px;    
+    height: 480px;
     background-color: var(--transparent);
-    padding: 100px 0; /* Ajusta el espaciado interno según tus preferencias */
+    padding: 100px 0;
+    /* Ajusta el espaciado interno según tus preferencias */
     border-radius: 10px;
     margin-top: 30px;
     justify-content: center;
 }
-div.content-div{
+
+div.content-div {
     background-color: var(--transparent);
     border-radius: 10px;
-    
+
 
 }
-div.about-p-img{
+
+div.about-p-img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-      
+
 }
-.about-title{
+
+.about-title {
     margin-top: 110px;
 }
-.about-title h2{
+
+.about-title h2 {
     width: fit-content;
     height: fit-content;
     font-size: 1.5rem;
@@ -297,20 +333,22 @@ div.about-p-img{
     text-align: center;
     display: flex;
     flex-direction: column;
-    
+
 }
-.sec-one-left p{
+
+.sec-one-left p {
     width: 300px;
     font-size: 1.2rem;
-    background-color: rgba(106, 13, 173, 0.2);
+    background-color: rgba(255 , 255, 255, 0.4);
     justify-content: left;
     margin-left: 30px;
     margin-top: 0%;
 
 }
-.sec-one-left img{
+
+.sec-one-left img {
     margin-right: 40px;
-    width:250px;
+    width: 250px;
     height: 250px;
     box-shadow: 3px 3px 5px #002B5B;
 }
@@ -320,18 +358,21 @@ div.about-p-img{
     text-align: center;
     padding: 0%;
     border-radius: 10px;
-    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
+    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
-    background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
+    background-attachment: fixed;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
@@ -349,24 +390,25 @@ div.about-p-img{
     bottom: -2.5em;
     animation: wave 20s -1s reverse infinite;
     opacity: 0.9;
-} /* Ajusta el color de fondo según tus preferencias */
-     /* Ajusta el color del texto según tus preferencias */
+}
 
-     .footer-container.container h2{
-        color: var(--purple);
-        
-     }
-     div.contact{
-        display: flex;
+.footer-container.container h2 {
+    color: var(--green);
+
+}
+
+div.contact {
+    display: flex;
     justify-content: space-around;
-     }
-     p {
-        max-width: 400px;
-        font-size: 1rem;
-        justify-content: space-around;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        background-color: rgba(106, 13, 173, 0.2);
-        border-radius: 10px;
-        border: 1px solid ;
-    }
+}
+
+p {
+    max-width: 400px;
+    font-size: 1rem;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255 , 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid;
+}

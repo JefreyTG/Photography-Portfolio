@@ -1,14 +1,13 @@
-:root{
-    --white:#ddd;
-    --dark: #111; 
+:root {
+    --white: #ddd;
+    --dark: #111;
     --lightGrey: #9DB2BF;
     --darkGrey: #526D82;
     --darkBlue: #002B5B;
     --lightBeige: #F5EFE3;
-    --purple:#6a0dad;
-    --transparent:rgba(255, 0, 0, 0)
+    --green: #7db37b;
+    --transparent: rgba(255, 0, 0, 0)
 }
-
 
 
 
@@ -22,19 +21,23 @@
     padding: 10px;
     overflow: auto;
     border-radius: 10px;
-    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
+    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    z-index: 10; /* Ajusta el color de fondo según tus preferencias */
+    z-index: 10;
+    /* Ajusta el color de fondo según tus preferencias */
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
@@ -54,14 +57,15 @@
     opacity: 0.9;
 }
 
-span.brand-name{
+span.brand-name {
     font-size: 1.5rem;
     margin-left: 25px;
 }
 
 .logo-img img {
     height: 40px;
-    border-radius: 35%; /* Ajusta la altura del logo según tus necesidades */
+    border-radius: 35%;
+    /* Ajusta la altura del logo según tus necesidades */
 }
 
 .nav-section {
@@ -69,7 +73,7 @@ span.brand-name{
     display: flex;
     align-items: left;
     margin-left: 0%;
-    
+
 }
 
 .brand-container {
@@ -87,9 +91,9 @@ span.brand-name{
     font-weight: 600;
     text-align: center;
     width: 300px;
-    color: var(--purple);
+    color: var(--green);
     margin-right: 20px;
-    margin-left: 50px; /* Espaciado entre el nombre de la marca y el botón de navegación */
+    margin-left: 50px;
 }
 
 .nav-bars ul {
@@ -97,59 +101,65 @@ span.brand-name{
     height: auto;
     list-style: none;
     padding: 0%;
-    margin:5px 15px 5px 5px;
+    margin: 5px 15px 5px 5px;
     display: flex;
     align-items: center;
 
-    
+
 }
 
 .nav-bars li {
     width: fit-content;
     margin-right: 20px;
     border: 2px solid var(--lightBeige);
-    background-color: var(--lightBeige); /* Espaciado entre elementos de navegación */
+    background-color: var(--lightBeige);
+    /* Espaciado entre elementos de navegación */
     border-radius: 7px;
-    box-shadow: 2px 2px 4px var(--purple);
+    box-shadow: 2px 2px 4px var(--green);
 
 }
 
-.nav-bars a{
+.nav-bars a {
     width: 45.5px;
     height: 28px;
-    color: var(--purple);
+    color: var(--green);
     font-size: 1rem;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 7px;
 
 }
-a.a-index:hover{
-    filter: brightness(150%);
-    font-size: 1.3rem;
-    margin: 0%;
-    
-    
 
-}
-a.a-gallery:hover{
+a.a-index:hover {
     filter: brightness(150%);
     font-size: 1.3rem;
     margin: 0%;
 
+
+
 }
-a.a-contact:hover{
+
+a.a-gallery:hover {
     filter: brightness(150%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
-a.a-projects:hover{
+
+a.a-contact:hover {
     filter: brightness(150%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
+
+a.a-projects:hover {
+    filter: brightness(150%);
+    font-size: 1.3rem;
+    margin: 0%;
+
+}
+
 .header-container img {
     width: 50px;
     height: 50px;
@@ -158,26 +168,26 @@ a.a-projects:hover{
 
 .section-contact {
     padding: 80px 0;
-    background-image:URL('./Images/golden-background.jpg');
-    color: var(--purple);
+    background-image: URL('./Images/golden-background.jpg');
+    color: var(--green);
 }
 
 .contact-top h3 {
-    color: var(--purple);
+    color: var(--green);
 }
 
 .section-contact {
     padding: 80px 0;
     background-color: var(--lightBeige);
-    color: var(--purple);
+    color: var(--green);
     text-align: center;
 }
 
 .contact-top h3 {
-    color: var(--purple);
+    color: var(--green);
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-size: ;
+
 }
 
 .contact-middle {
@@ -193,7 +203,7 @@ a.a-projects:hover{
 }
 
 .contact-icon {
-    color: var(--purple);
+    color: var(--green);
     margin-right: 10px;
 }
 
@@ -212,7 +222,7 @@ a.a-projects:hover{
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid var(--purple);
+    border: 2px solid var(--green);
     border-radius: 8px;
     background-color: var(--lightBeige);
     color: var(--dark);
@@ -220,7 +230,7 @@ a.a-projects:hover{
 }
 
 .form input[type="submit"] {
-    background-color: var(--purple);
+    background-color: var(--green);
     font-size: 1rem;
     color: var(--lightBeige);
     cursor: pointer;
@@ -229,8 +239,8 @@ a.a-projects:hover{
 
 .form input[type="submit"]:hover {
     background-color: var(--lightBeige);
-    color: var(--purple);
-    box-shadow: 2px 2px 4px var(--purple);
+    color: var(--green);
+    box-shadow: 2px 2px 4px var(--green);
 }
 
 .footer-container.container {
@@ -238,18 +248,22 @@ a.a-projects:hover{
     text-align: center;
     padding: 0%;
     border-radius: 10px;
-    background:  linear-gradient(315deg, #ffd700 3%, #b8860b 38%, #cdaf70 68%, #ffecb3 98%);
+    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
-    background-attachment: fixed; /* Ajusta el color de fondo según tus preferencias */
+    background-attachment: fixed;
+    /* Ajusta el color de fondo según tus preferencias */
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
@@ -267,24 +281,25 @@ a.a-projects:hover{
     bottom: -2.5em;
     animation: wave 20s -1s reverse infinite;
     opacity: 0.9;
-} /* Ajusta el color de fondo según tus preferencias */
-     /* Ajusta el color del texto según tus preferencias */
+}
 
-     .footer-container.container h2{
-        color: var(--purple);
-        
-     }
-     div.contact{
-        display: flex;
+.footer-container.container h2 {
+    color: var(--green);
+
+}
+
+div.contact {
+    display: flex;
     justify-content: space-around;
-     }
-     p {
-        max-width: 400px;
-        font-size: 1rem;
-        justify-content: space-around;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        background-color: rgba(106, 13, 173, 0.2);
-        border-radius: 10px;
-        border: 1px solid ;
-    }
+}
+
+p {
+    max-width: 400px;
+    font-size: 1rem;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: 1px solid;
+}
