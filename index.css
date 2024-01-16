@@ -19,7 +19,7 @@ body {
     align-items: center;
     align-content: center;
     font-family: 'Raleway', sans-serif;
-    background-image: URL('../Images/golden-background.jpg');
+    background:#fbfcfd;
     background-size: contain;
     justify-content: center;
 
