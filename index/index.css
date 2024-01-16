@@ -19,7 +19,7 @@ body {
     align-items: center;
     align-content: center;
     font-family: 'Raleway', sans-serif;
-    background-image: URL('./Images/golden-background.jpg');
+    background-image: URL('../Images/golden-background.jpg');
     background-size: contain;
     justify-content: center;
 
@@ -411,4 +411,97 @@ p {
     background-color: rgba(255 , 255, 255, 0.4);
     border-radius: 10px;
     border: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+    header.header-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-section {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .brand-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-bars {
+        margin: 10px 0;
+    }
+
+    .search-icon {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav-bars ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-bars li {
+        margin: 5px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-one-container {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .sec-one-left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .content-div,
+    .about-title h2,
+    .sec-one-left h3,
+    .sec-one-left p {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-img img,
+    .sec-one-left img {
+        margin-top: 20px;
+    }
+
+    .about-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .sec-one-left h3 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer.footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .footer-container.container h2 {
+        font-size: 1.5rem;
+    }
+
+    div.contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
