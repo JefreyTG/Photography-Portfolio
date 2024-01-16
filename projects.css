@@ -24,6 +24,7 @@ header.header-container {
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
+    z-index: 100;
     /* Ajusta el color de fondo según tus preferencias */
 }
 
@@ -84,13 +85,13 @@ span.brand-name {
     border-radius: 10px;
 }
 
-.brand-name {
+span.brand-name {
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
     width: 300px;
-    color: var(--lightBeige);
+    color: var(--green);
     margin-right: 20px;
     margin-left: 50px;
 }
@@ -172,7 +173,7 @@ body {
     margin-left: 0%;
     padding: 0%;
     font-family: 'Raleway', sans-serif;
-    background-image: URL('../Images/golden-background.jpg');
+    background-image: URL('./Images/golden-background.jpg');
 
 
 
@@ -307,6 +308,10 @@ div.contact {
     display: flex;
     justify-content: space-around;
 }
+div.contact h3{
+    font-size: 1.5rem;
+    color: var(--green);
+}
 
 p {
     max-width: 400px;
@@ -314,7 +319,67 @@ p {
     justify-content: space-around;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(106, 13, 173, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     border: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+    header.header-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-section {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .brand-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-bars {
+        margin: 10px 0;
+    }
+
+    .search-icon {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav-bars ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-bars li {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer.footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .footer-container.container h2 {
+        font-size: 1.5rem;
+    }
+
+    div.contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }

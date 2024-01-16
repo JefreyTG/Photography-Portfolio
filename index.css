@@ -402,10 +402,11 @@ div.contact {
     justify-content: space-around;
 }
 
-p {
+div.contact p {
     max-width: 400px;
     font-size: 1rem;
     justify-content: space-around;
+    align-content: center;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgba(255 , 255, 255, 0.4);

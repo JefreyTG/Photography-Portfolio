@@ -252,7 +252,6 @@ a.a-projects:hover {
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    /* Ajusta el color de fondo según tus preferencias */
 }
 
 @keyframes gradient {
@@ -283,9 +282,9 @@ a.a-projects:hover {
     opacity: 0.9;
 }
 
-.footer-container.container h2 {
+.footer-container.container h3 {
+    font-size: 1.5rem;
     color: var(--green);
-
 }
 
 div.contact {
@@ -293,13 +292,74 @@ div.contact {
     justify-content: space-around;
 }
 
-p {
+div.contact p {
     max-width: 400px;
     font-size: 1rem;
     justify-content: space-around;
+    align-content: center;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255 , 255, 255, 0.4);
     border-radius: 10px;
     border: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+    header.header-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-section {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .brand-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-bars {
+        margin: 10px 0;
+    }
+
+    .search-icon {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav-bars ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-bars li {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer.footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .footer-container.container h2 {
+        font-size: 1.5rem;
+    }
+
+    div.contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
