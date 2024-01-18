@@ -5,27 +5,42 @@
     --darkGrey: #526D82;
     --darkBlue: #002B5B;
     --lightBeige: #F5EFE3;
-    --green: #7db37b;
+    --light-orange: #ffa450;
     --transparent: rgba(255, 0, 0, 0)
 }
 
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
 
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image:URL('./Images/bkg-1.jpg');
+    background-size: cover;
+    
+    
+   
+    
+
+}
+/* Header */
 
 header.header-container {
     position: fixed;
     width: 100%;
     height: 60px;
     display: flex;
-    align-items: center;
-    padding: 10px;
-    overflow: auto;
-    border-radius: 10px;
-    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
+    justify-content:left;
+    padding: 10px 10px;
+    justify-content: space-around;
+    background: linear-gradient(315deg, #1f2022 10%, #dd7c14 15%, #6a7075 25%, #686664 30%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    z-index: 100;
-    /* Ajusta el color de fondo según tus preferencias */
 }
 
 @keyframes gradient {
@@ -55,53 +70,72 @@ header.header-container {
     animation: wave 20s -1s reverse infinite;
     opacity: 0.9;
 }
+div.logo-img{
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    align-content: center;
+}
+div.logo-img img {
+    width: 100px;
+    height: 70px;
+    margin-left: 10%;
+    border-radius: 20%;
+    /* Ajusta la altura del logo según tus necesidades */
+}
+span.brand-container {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 30px;
+    
+    display: flex;
+   text-align: center;
+   border-radius: 10px;
+}
 
 span.brand-name {
-    color: var(--green);
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
+    position: relative;
+    left: 0%;
+    color: var(--light-orange);
+    font-size: 2.2rem;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
     margin-left: 25px;
 }
 
-.logo-img img {
-    height: 40px;
-    border-radius: 35%;
-}
 
-.nav-section {
-    width: 460px;
+div.nav-section {
     display: flex;
-    align-items: left;
-    margin-left: 0%;
-
+    width: 70%;
+    align-content: center;
+    align-items: center;
+    margin-left: 10%;
+    
 }
 
-.brand-container {
+div.brand-container {
+    min-width: fit-content;
     margin-left: 10px;
-    margin-right: 30px;
+    margin-right: 80px;
     width: fit-content;
-    display: flex;
     align-items: center;
     border-radius: 10px;
 }
 
-span.brand-name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    width: 300px;
-    color: var(--green);
-    margin-right: 20px;
-    margin-left: 50px;
-}
 
+nav.nav-bars{
+    width: fit-content;
+    height: fit-content;
+    
+}
 .nav-bars ul {
     width: fit-content;
     height: auto;
     list-style: none;
     padding: 0;
-    margin: 5px 15px 5px 5px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
 
@@ -113,25 +147,25 @@ span.brand-name {
     margin-right: 20px;
     border: 2px solid var(--lightBeige);
     background-color: var(--lightBeige);
-    /* Espaciado entre elementos de navegación */
     border-radius: 7px;
-    box-shadow: 2px 2px 4px var(--green);
+    box-shadow: 2px 2px 4px var(--light-orange);
 
 }
 
 a {
-    width: 45.5px;
-    height: 28px;
-    color: var(--green);
+    width: fit-content;
+    height: fit-content;
+    color: var(--light-orange);
     font-size: 1rem;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 7px;
+    padding: 5px;
 
 }
 
 a.a-index:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
@@ -140,132 +174,271 @@ a.a-index:hover {
 }
 
 a.a-gallery:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
 
 a.a-contact:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
 
-a.a-blog:hover {
-    filter: brightness(150%);
+a.a-projects:hover {
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
 
-.header-container img {
-    width: 50px;
-    height: 50px;
-}
+/* End of Header*/
 
-body {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin-top: 0%;
-    margin-left: 0%;
-    padding: 0%;
-    font-family: 'Raleway', sans-serif;
-    background-image: URL('./Images/golden-background.jpg');
-
-
-
-}
+/*Projects*/ 
 
 .section-projects {
     width: 100%;
     height: 100%;
-    margin-top: 60px;
+    margin-top: 0px
+}
+div.p1-container{
+    padding-top: 180px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.p1-container h1{
+    width: 80%;
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    color:var(--light-orange);
+    font-size: 2.5rem;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    z-index: 99;
 }
 
-div.div-imgs {
-    height: 80%;
-    width: 100%;
+div.div-imgs1 {
+    height:fit-content;
+    width: fit-content;
     display: flex;
-    margin: 5% auto 0;
+    flex-direction: row;
+    margin-right: 80px;
+    
+    padding-left: 40px;
     box-sizing: border-box;
 
 }
 
-div.imgs-container {
+div.imgs1-container {
+    width: fit-content;
+    height:fit-content ;
     margin: 0 1%;
+    justify-content:space-around;
     flex-grow: 1;
     flex-basis: 0;
     transition: .5s;
 }
 
-div.imgs-container img {
-    width: 80%;
-    height: 80%;
+div.imgs1-container img {
+    width: 100%;
+    height: 50%;
+    max-width: 250px;
+    max-height: 350px;
     object-fit: cover;
     transition: .5s;
     filter: brightness(70%);
+    border-radius: 15px;
 }
 
-div.imgs-container:hover {
+div.imgs1-container:hover {
     flex-basis: 20%;
     filter: brightness(140%);
 
 }
 
 .active {
-    flex-basis: 50%;
+    flex-basis: 25%;
 }
 
-img {
-    width: 150px;
-    height: 150px;
+.p1-container p{
+    max-width: 300px;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.945);
+    border-radius: 10px;
+}
+/*-------P2--------*/
+
+div.p2-container{
+    height: fit-content;
+    width: 100%;
+    margin-top: 160px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+div.p2-container h1{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    left: 30px;
+    top: 600px;
+    color:var(--light-orange);
+    font-size: 2.5rem;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    z-index: 99;
+}
+div.div-imgs2 {
+    height:fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    
+    padding-left: 40px;
+    box-sizing: border-box;
+
+}
+div.imgs2-container {
+    width: fit-content;
+    height:fit-content ;
+    margin: 0 1%;
+    justify-content:space-around;
+    
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+
+div.imgs2-container img {
+    width: 100%;
+    height: 50%;
+    max-width: 250px;
+    max-height: 350px;
+    object-fit: cover;
+    transition: .5s;
+    filter: brightness(70%);
     border-radius: 15px;
 }
 
-.p1-container h1,
-.p2-container h1,
-.p3-container h1 {
-    font-size: 2rem;
-    font-family: 'Raleway', sans-serif;
-    color: var(--green);
-    margin-top: 70px;
-    padding: 0%;
+div.imgs2-container:hover {
+    flex-basis: 20%;
+    filter: brightness(140%);
+
 }
 
-.div-imgs {
-    margin-top: 70px;
+
+
+.p2-container p{
+    max-width: 300px;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.945);
+    border-radius: 10px;}
+/*----p3----*/
+div.p3-container{
+    height: fit-content;
+    width: 100%;
+    margin-top: 160px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+div.p3-container h1{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    left: 30px;
+    top: 1100px;
+    color:var(--light-orange);
+    font-size: 2.5rem;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    z-index: 99;
+}
+div.div-imgs3 {
+    height:fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    
+    padding-left: 40px;
+    box-sizing: border-box;
+
+}
+div.imgs3-container {
+    width: fit-content;
+    height:fit-content ;
+    margin: 0 1%;
+    justify-content:space-around;
+    
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
 }
 
-p,
-h3 {
-    max-width: 400px;
-    font-size: 1rem;
-    justify-content: space-around;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    background: var(--lightBeige);
+div.imgs3-container img {
+    width: 100%;
+    height: 50%;
+    max-width: 250px;
+    max-height: 350px;
+    object-fit: cover;
+    transition: .5s;
+    filter: brightness(70%);
+    border-radius: 15px;
+}
+
+div.imgs3-container:hover {
+    flex-basis: 20%;
+    filter: brightness(140%);
+
+}
+
+
+
+.p3-container p{
+    max-width: 300px;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.945);
     border-radius: 10px;
-    border: 2px solid var(--green);
 }
 
-div.p1-container p, div.p2-container p, div.p3-container p {
-    background-color: rgba(255, 255, 255, 0.4);
-}
 
+
+
+
+
+
+
+
+
+
+/*End of Gallery*/
+
+/* FOOTER*/
 
 .footer-container.container {
     width: 100%;
+    height: 40px;
     text-align: center;
     padding: 0%;
     border-radius: 10px;
-    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
+    background: linear-gradient(315deg, #1f2022 10%, #dd7c14 15%, #6a7075 25%, #686664 30%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    /* Ajusta el color de fondo según tus preferencias */
 }
 
 @keyframes gradient {
@@ -296,90 +469,34 @@ div.p1-container p, div.p2-container p, div.p3-container p {
     opacity: 0.9;
 }
 
-/* Ajusta el color de fondo según tus preferencias */
-/* Ajusta el color del texto según tus preferencias */
-
-.footer-container.container h2 {
-    color: var(--green);
+.footer-container.container h3 {
+    color: var(--light-orange);
 
 }
 
 div.contact {
+    height: 40px;
     display: flex;
-    justify-content: space-around;
-}
-div.contact h3{
-    font-size: 1.5rem;
-    color: var(--green);
+    margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+    margin-bottom: 0%;
 }
 
-p {
+
+div.contact p {
     max-width: 400px;
+    margin: 0%;
     font-size: 1rem;
     justify-content: space-around;
+    align-content: center;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(247, 243, 243);
     border-radius: 10px;
     border: 1px solid;
 }
-
-@media screen and (max-width: 768px) {
-    header.header-container {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav-section {
-        flex-direction: column;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .brand-container {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .nav-bars {
-        margin: 10px 0;
-    }
-
-    .search-icon {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .nav-bars ul {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-
-    .nav-bars li {
-        margin: 5px 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    footer.footer {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .footer-container.container h2 {
-        font-size: 1.5rem;
-    }
-
-    div.contact {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    p {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-}
+/*End of Footer*/

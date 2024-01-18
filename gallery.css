@@ -5,30 +5,43 @@
     --darkGrey: #526D82;
     --darkBlue: #002B5B;
     --lightBeige: #F5EFE3;
-    --green: #7db37b;
+    --light-orange: #ffa450;
     --transparent: rgba(255, 0, 0, 0)
 }
 
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
 
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image:URL('./Images/bkg-1.jpg');
+    background-size: cover;
+    
+    
+   
+    
 
-.header-container {
+}
+/* Header */
+
+header.header-container {
     position: fixed;
     width: 100%;
     height: 60px;
-    margin-bottom: 100px;
     display: flex;
-    align-items: center;
-    padding: 10px;
-    overflow: auto;
-    border-radius: 10px;
-    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
-
-
+    justify-content:left;
+    padding: 10px 10px;
+    justify-content: space-around;
+    background: linear-gradient(315deg, #1f2022 10%, #dd7c14 15%, #6a7075 25%, #686664 30%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    z-index: 10;
-    /* Ajusta el color de fondo según tus preferencias */
+    z-index: 100;
 }
 
 @keyframes gradient {
@@ -58,53 +71,73 @@
     animation: wave 20s -1s reverse infinite;
     opacity: 0.9;
 }
-
-span.brand-name {
-    color: var(--green);
-    margin-left: 25px;
-    font-size: 2rem;
+div.logo-img{
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    align-content: center;
 }
-
-.logo-img img {
-    height: 40px;
-    border-radius: 35%;
+div.logo-img img {
+    width: 100px;
+    height: 70px;
+    margin-left: 10%;
+    border-radius: 20%;
     /* Ajusta la altura del logo según tus necesidades */
 }
-
-.nav-section {
-    width: 460px;
-    display: flex;
-    align-items: left;
-    margin-left: 0%;
-
-}
-
-.brand-container {
+span.brand-container {
+    width: 100%;
     margin-left: 10px;
     margin-right: 30px;
-    width: fit-content;
+    
     display: flex;
+   text-align: center;
+   border-radius: 10px;
+}
+
+span.brand-name {
+    position: relative;
+    left: 0%;
+    color: var(--light-orange);
+    font-size: 2.2rem;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    margin-left: 25px;
+}
+
+
+div.nav-section {
+    display: flex;
+    width: 70%;
+    align-content: center;
+    align-items: center;
+    margin-left: 10%;
+    
+}
+
+div.brand-container {
+    min-width: fit-content;
+    margin-left: 10px;
+    margin-right: 80px;
+    width: fit-content;
     align-items: center;
     border-radius: 10px;
 }
 
-.brand-name {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    width: 300px;
-    color: var(--lightBeige);
-    margin-right: 20px;
-    margin-left: 50px;
-    /* Espaciado entre el nombre de la marca y el botón de navegación */
-}
 
+nav.nav-bars{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 20px ;
+    
+}
 .nav-bars ul {
     width: fit-content;
     height: auto;
     list-style: none;
     padding: 0;
-    margin: 5px 15px 5px 5px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
 
@@ -113,28 +146,29 @@ span.brand-name {
 
 .nav-bars li {
     width: fit-content;
+    height: fit-content;
     margin-right: 20px;
     border: 2px solid var(--lightBeige);
     background-color: var(--lightBeige);
-    /* Espaciado entre elementos de navegación */
     border-radius: 7px;
-    box-shadow: 2px 2px 4px var(--green);
+    box-shadow: 2px 2px 4px var(--light-orange);
 
 }
 
 a {
     width: 45.5px;
     height: 28px;
-    color: var(--green);
+    color: var(--light-orange);
     font-size: 1rem;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 7px;
+    padding: 5px;
 
 }
 
 a.a-index:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
@@ -143,42 +177,34 @@ a.a-index:hover {
 }
 
 a.a-gallery:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
 
 a.a-contact:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
 
-a.a-blog:hover {
-    filter: brightness(150%);
+a.a-projects:hover {
+    filter: brightness(110%);
     font-size: 1.3rem;
     margin: 0%;
 
 }
 
-.header-container img {
-    width: 50px;
-    height: 50px;
+
+.search-icon {
+    margin-left: auto;
+    /* Empuja el icono de búsqueda a la derecha */
 }
 
-body {
+/* End of Header*/
 
-    margin-top: 0px;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* Ajusta la fuente según tus preferencias */
-    background-image: URL('./Images/golden-background.jpg');
-
-
-
-}
 
 section.section-gallery {
     margin-top: 0px;
@@ -288,16 +314,19 @@ div.btn:active::before {
 
 
 
+
+/* FOOTER*/
+
 .footer-container.container {
     width: 100%;
+    height: 40px;
     text-align: center;
     padding: 0%;
     border-radius: 10px;
-    background: linear-gradient(315deg, #002B5B 25%, #F4DFC8 25%, #526D82 25%, #FAF6F0 25%);
+    background: linear-gradient(315deg, #1f2022 10%, #dd7c14 15%, #6a7075 25%, #686664 30%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    /* Ajusta el color de fondo según tus preferencias */
 }
 
 @keyframes gradient {
@@ -328,32 +357,39 @@ div.btn:active::before {
     opacity: 0.9;
 }
 
-/* Ajusta el color de fondo según tus preferencias */
-/* Ajusta el color del texto según tus preferencias */
-
-.footer-container.container h3 {
-    font-size: 1.5rem;
-    color: var(--green);
+.footer-container.container h2 {
+    color: var(--light-orange);
 
 }
 
 div.contact {
+    height: 40px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+    margin-bottom: 0%;
 }
 
+div.contact  h3{
+    color: var(--light-orange);
+    margin: 10px;
+}
 div.contact p {
     max-width: 400px;
+    margin: 10px ;
     font-size: 1rem;
     justify-content: space-around;
     align-content: center;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(255 , 255, 255, 0.4);
+    background-color: rgb(247, 243, 243);
     border-radius: 10px;
     border: 1px solid;
 }
-
+/*End of Footer*/
 
 @media screen and (max-width: 768px) {
     header.header-container {
@@ -363,10 +399,13 @@ div.contact p {
         justify-content: center;
     }
 
-    .nav-section {
-        flex-direction: column;
-        margin-left: 0;
-        width: 100%;
+    div.nav-section {
+        display: flex;
+        width: 70%;
+        align-content: center;
+        align-items: center;
+        margin-left: 10%;
+        
     }
 
     .brand-container {
